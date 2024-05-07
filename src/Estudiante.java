@@ -1,5 +1,10 @@
-public class Estudiante extends Persona{
+public class Estudiante extends Persona implements Trabajador{
     private int Grado;
+
+    @Override
+    public void ralizarTarea() {
+        System.out.println("Realizando tarea escolar");
+    }
 
     public Estudiante(String nombre, int edad, int fechaDeNacimiento, int grado) {
         super (nombre, edad, fechaDeNacimiento);
