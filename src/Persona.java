@@ -24,6 +24,15 @@ public class Persona {
     }
 
     public void setEdad(Integer edad) {
-        Edad = edad;
+        if (edad >= 0){
+            Edad = edad;
+        }
+        else {
+            System.out.println("Tu edad no puede ser un numero negativo");
+        }
+
+
     }
+
+
 }
