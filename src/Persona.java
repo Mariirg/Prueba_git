@@ -1,7 +1,11 @@
 public class Persona {
     private String Nombre;
     private int FechaDeNacimiento;
-    private Integer Edad;
+    private int Edad;
+
+    public Persona(String nombre, int edad, int fechaDeNacimiento) {
+
+    }
 
     public String getNombre() {
         return Nombre;
@@ -23,11 +27,11 @@ public class Persona {
         FechaDeNacimiento = 2024 - Edad;
     }
 
-    public Integer getEdad() {
+    public int getEdad() {
         return Edad;
     }
 
-    public void setEdad(Integer edad) {
+    public void setEdad(int edad) {
         if (edad >= 0){
             Edad = edad;
         }
