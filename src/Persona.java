@@ -1,6 +1,6 @@
 public class Persona {
     private String Nombre;
-    private String FechaDeNacimiento;
+    private int FechaDeNacimiento;
     private Integer Edad;
 
     public String getNombre() {
@@ -11,12 +11,16 @@ public class Persona {
         Nombre = nombre;
     }
 
-    public String getFechaDeNacimiento() {
+    public int getFechaDeNacimiento() {
         return FechaDeNacimiento;
     }
 
-    public void setFechaDeNacimiento(String fechaDeNacimiento) {
+    public void setFechaDeNacimiento(int fechaDeNacimiento) {
         FechaDeNacimiento = fechaDeNacimiento;
+    }
+
+    public void calcularFechaNacimiento(){
+        FechaDeNacimiento = 2024 - Edad;
     }
 
     public Integer getEdad() {
@@ -30,9 +34,8 @@ public class Persona {
         else {
             System.out.println("Tu edad no puede ser un numero negativo");
         }
-
-
     }
+
 
 
 }
