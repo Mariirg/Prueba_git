@@ -2,6 +2,9 @@ public class FiguraGeometrica {
     private String Nombre;
     private String Color;
 
+    public FiguraGeometrica(String nombre, String color) {
+    }
+
     public String getNombre() {
         return Nombre;
     }
@@ -17,4 +20,5 @@ public class FiguraGeometrica {
     public void setColor(String color) {
         Color = color;
     }
+
 }
