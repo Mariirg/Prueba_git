@@ -6,5 +6,9 @@ public class Main {
         persona1.calcularFechaNacimiento();
         System.out.println(persona1.getFechaDeNacimiento());
 
+        Trabajador trabajador = () -> System.out.println("Cualquier cosa");
+
+        trabajador.realizarTarea();
+
     }
 }
